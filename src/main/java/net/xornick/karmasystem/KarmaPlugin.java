@@ -12,6 +12,7 @@ public final class KarmaPlugin extends JavaPlugin {
     @Override
     public void onEnable() {
         plugin = this;
+        saveDefaultConfig();
         register(new PositiveKarmaChatEvent());
         register(new NegativeKarmaChatEvent());
     }
